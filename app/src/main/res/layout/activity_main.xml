@@ -1,12 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@mipmap/taxi_vertikal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RENT"
+
+    <ImageButton
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:id="@+id/rent"
-        android:onClick="clickButtonRent"/>
+        android:onClick="clickButtonRent"
+        android:background="@mipmap/rent"
+        android:src="@drawable/button_stroke"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageButton
+        android:id="@+id/kafe"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@mipmap/kafe"
+        android:onClick="clickButtonKafe"
+        android:src="@drawable/button_stroke"
+        android:layout_toRightOf="@id/rent"
+        android:layout_above="@id/rent"
+        android:layout_marginLeft="-25dp"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageButton
+        android:id="@+id/repair"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@mipmap/repair"
+        android:onClick="clickButtonRepair"
+        android:src="@drawable/button_stroke"
+        android:layout_below="@id/kafe"
+        android:layout_toRightOf="@id/kafe"
+        android:layout_marginLeft="-25dp"/>
+
+    <ImageButton
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/sink"
+        android:onClick="clickButtonSink"
+        android:src="@drawable/button_stroke"
+        android:background="@mipmap/sink"
+        android:layout_toLeftOf="@id/rent"
+        android:layout_above="@id/rent"
+        android:layout_marginRight="-25dp"
+        android:layout_marginBottom="15dp"/>
+
+    <ImageButton
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/service"
+        android:onClick="clickButtonService"
+        android:src="@drawable/button_stroke"
+        android:background="@mipmap/service"
+        android:layout_toLeftOf="@id/sink"
+        android:layout_below="@id/sink"
+        android:layout_marginRight="-25dp"/>
 
 </RelativeLayout>

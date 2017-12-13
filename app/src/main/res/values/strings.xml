@@ -1,7 +1,14 @@
 <resources>
-    <string name="app_name">TaxiUser</string>
+    <string name="app_name">Таксисту в Помощь</string>
     <string name="title_activity_maps">TaxiUser</string>
     <string name="Biography">Описание</string>
     <string name="Miss">Отсутствует</string>
     <string name="Link">Посмотреть в сети:</string>
+    <string name="url_sink">http://slipqufe.beget.tech/assets/customers/sink/sink.txt</string>
+    <string name="url_kafe">http://slipqufe.beget.tech/assets/customers/kafe/kafe.txt</string>
+    <string name="url_game">http://slipqufe.beget.tech/assets/customers/game/game.txt</string>
+    <string name="url_repair">http://slipqufe.beget.tech/assets/customers/repair/repair.txt</string>
+    <string name="url_service">http://slipqufe.beget.tech/assets/customers/service/service.txt</string>
+    <string name="url_rent">http://slipqufe.beget.tech/assets/customers/rent/rent.txt</string>
+    <string name="name_site">Перейти на сайт компании</string>
 </resources>
