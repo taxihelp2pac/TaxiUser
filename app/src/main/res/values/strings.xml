@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TaxiUser</string>
+    <string name="title_activity_maps">TaxiUser</string>
+    <string name="Biography">Описание</string>
+    <string name="Miss">Отсутствует</string>
+    <string name="Link">Посмотреть в сети:</string>
+</resources>
