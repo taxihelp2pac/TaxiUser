@@ -1,6 +1,10 @@
 package com.slipquack.taxiuser.customers;
 
+import android.content.Context;
 import android.content.Intent;
+import android.view.View;
+import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptor;
@@ -19,6 +23,8 @@ import com.slipquack.taxiuser.R;
 public class GeoSink extends MapsActivity {
 
 
+    ProgressBar progressBar;
+    public Context context;
     @Override
     public void onMapReady(GoogleMap googleMap) {
         super.onMapReady(googleMap);
@@ -27,10 +33,8 @@ public class GeoSink extends MapsActivity {
 
     }
 
-
-    protected DownloadGeoJsonFile retriveFileFromUrl() {
-        new DownloadGeoJsonFile().execute(getString(R.string.url_sink));
-        return null;
+    protected void retriveFileFromUrl() {
+         new DownloadGeoJsonFile().execute(getString(R.string.url_sink));
     }
 
 
@@ -60,4 +64,5 @@ public class GeoSink extends MapsActivity {
                 });
             }
     }
+
 }

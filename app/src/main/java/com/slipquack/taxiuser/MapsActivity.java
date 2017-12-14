@@ -1,6 +1,7 @@
 package com.slipquack.taxiuser;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -11,6 +12,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -38,6 +41,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         @Override
         public void onLocationChanged(Location location) {
             printLocation(location);
+
         }
 
         @Override
@@ -47,6 +51,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         @Override
         public void onProviderEnabled(String s) {
+
         }
 
         @Override
@@ -54,11 +59,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         }
     };
-    private LocationManager locationManager;
-    private double lat;
-    private double lng;
     private Location location;
-    private String mLog;
+    public String mLog;
+    public Context context;
+    public ProgressBar progressBar;
+    public View progressBarMapActivity;
 
 
     @Override
@@ -69,38 +74,55 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        progressBarMapActivity = (View) findViewById(R.id.activity_progress_bar);
+        progressBarMapActivity.setVisibility(View.VISIBLE);
+        progressBar = (ProgressBar) findViewById(R.id.progressBarMap);
+        progressBar.setVisibility(ProgressBar.VISIBLE);
+        context = getApplicationContext();
 
-        locationManager = (LocationManager) getSystemService(
+
+        LocationManager locationManager = (LocationManager) getSystemService(
                 Context.LOCATION_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(
+                this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager
+                .PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                        this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
 
             return;
         }
+        assert locationManager != null;
         locationManager.requestLocationUpdates(
                 LocationManager.GPS_PROVIDER, 10 * 3000, 5, locationListener);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager
+                .PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission
+                .ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        location = locationManager.getLastKnownLocation(
-                LocationManager.GPS_PROVIDER);
 
-        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 10 * 3000, 5, locationListener);
+        location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+        locationManager.requestLocationUpdates(
+                LocationManager.NETWORK_PROVIDER, 10 * 3000, 5, locationListener);
         location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
+    }
 
+    public void onProgressBarMap(View view) {
+        Toast.makeText(context, "Подождите идёт загрузка", Toast.LENGTH_LONG).show();
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        LatLng startPosition = new LatLng(59.932031, 30.323078);
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(startPosition));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
 
 
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (ActivityCompat.checkSelfPermission(
+                this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager
+                .PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                        this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
             return;
         }
@@ -109,6 +131,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         } else {
             Toast.makeText(this, "Включитье GPS", Toast.LENGTH_LONG).show();
         }
+
         mMap.setMyLocationEnabled(true);
         mMap.getUiSettings().setZoomControlsEnabled(true);
 
@@ -120,8 +143,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void printLocation(Location location) {
         if (location != null) {
-            lat = location.getLatitude();
-            lng = location.getLongitude();
+            double lat = location.getLatitude();
+            double lng = location.getLongitude();
             LatLng position = new LatLng(lat, lng);
             CameraPosition cameraPosition = new CameraPosition.Builder()
                     .target(position)
@@ -133,6 +156,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
+    @SuppressLint("StaticFieldLeak")
     public class DownloadGeoJsonFile extends AsyncTask<String, Void, GeoJsonLayer> {
 
         @Override
@@ -162,6 +186,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         @Override
         protected void onPostExecute(GeoJsonLayer layer) {
+            progressBar.setVisibility(View.INVISIBLE);
+            progressBarMapActivity.setVisibility(View.INVISIBLE);
             if (layer != null) {
                 layer.addLayerToMap();
                 addToMarker(layer);
@@ -169,10 +195,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
     }
 
-    protected DownloadGeoJsonFile retriverFileFromUrl() {
-        return new DownloadGeoJsonFile();
-    }
-
-    protected void addToMarker(GeoJsonLayer layer) {
-    }
+    protected void addToMarker(GeoJsonLayer layer) { }
 }

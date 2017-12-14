@@ -5,4 +5,22 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.slipquack.taxiuser.MapsActivity" />
+    tools:context="com.slipquack.taxiuser.MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_progress_bar"
+        android:background="@color/colorPrimaryDark">
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="onProgressBarMap"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/progressBarMap"/>
+
+    </RelativeLayout>
+</fragment>
