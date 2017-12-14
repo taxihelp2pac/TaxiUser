@@ -39,14 +39,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        
-        <activity android:name=".rent.RentActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
 
         <activity android:name=".rent.FullActivity"
             android:screenOrientation="portrait">
@@ -83,6 +75,38 @@
             </intent-filter>
         </activity>
         <activity android:name=".customers.GeoSink">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rent.RentActivity"
+            android:label="@string/rent_select"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rent.RentSelect"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rent.BuyActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/rent_buy">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".rent.SaleActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/rent_sale">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>

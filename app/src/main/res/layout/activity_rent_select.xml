@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/rent_vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rent_sale"
+            android:onClick="rentSale"
+            android:textSize="35sp"
+            android:alpha="0.8"
+            android:text="@string/rent_sale"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rent_select"
+            android:text="@string/rent_select"
+            android:onClick="rentSelect"
+            android:textSize="35sp"
+            android:alpha="0.8"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rent_sale"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rent_buy"
+            android:alpha="0.8"
+            android:text="@string/rent_buy"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+            android:onClick="rentBuy"
+            android:layout_below="@id/rent_select"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

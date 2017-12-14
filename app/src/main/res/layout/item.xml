@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:id="@+id/imgSmall"/>
+        android:id="@+id/imgSmall" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,8 +15,18 @@
         android:id="@+id/name"
         android:paddingLeft="8dp"
         android:layout_below="@+id/imgSmall"
-        android:textColor="@color/abc_input_method_navigation_guard"
+        android:textColor="@color/colorGreyWhite"
         android:textSize="35sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/foto"
+        android:textSize="20sp"
+        android:layout_below="@+id/imgSmall"
+        android:textColor="@color/colorGreyWhite"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +36,14 @@
         android:paddingLeft="8dp"
         android:layout_toRightOf="@id/genres"
         android:textColor="@color/dim_foreground_material_dark"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:paddingBottom="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGreyWhite"
+        android:layout_below="@id/price"/>
 
     <TextView
         android:layout_width="wrap_content"

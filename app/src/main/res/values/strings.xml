@@ -11,4 +11,8 @@
     <string name="url_service">http://slipqufe.beget.tech/assets/customers/service/service.txt</string>
     <string name="url_rent">http://slipqufe.beget.tech/assets/customers/rent/rent.txt</string>
     <string name="name_site">Перейти на сайт компании</string>
+    <string name="rent_select">Аренда</string>
+    <string name="rent_sale">Продажа</string>
+    <string name="rent_buy">Покупка</string>
+    <string name="foto">ФОТО</string>
 </resources>

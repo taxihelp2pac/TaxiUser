@@ -11,7 +11,7 @@ import com.slipquack.taxiuser.customers.GeoKafe;
 import com.slipquack.taxiuser.customers.GeoRepair;
 import com.slipquack.taxiuser.customers.GeoService;
 import com.slipquack.taxiuser.customers.GeoSink;
-import com.slipquack.taxiuser.rent.RentActivity;
+import com.slipquack.taxiuser.rent.RentSelect;
 
 /**
  * Created by Alex on 13.12.2017.
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickButtonRent(View view) {
-        Intent intent = new Intent(MainActivity.this, RentActivity.class);
+        Intent intent = new Intent(MainActivity.this, RentSelect.class);
         startActivity(intent);
         clickButton(view);
     }

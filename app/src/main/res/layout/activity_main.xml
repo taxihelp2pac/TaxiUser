@@ -9,11 +9,11 @@
         android:layout_height="72dp"
         android:id="@+id/rent"
         android:onClick="clickButtonRent"
-        android:background="@mipmap/rent"
-        android:src="@drawable/button_stroke"
+        android:background="@drawable/button_stroke"
+        android:src="@mipmap/rent"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"/>
+        android:layout_marginBottom="102dp"/>
 
     <ImageView
         android:id="@+id/kafe"
