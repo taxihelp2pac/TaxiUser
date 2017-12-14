@@ -4,7 +4,7 @@
     android:background="@mipmap/taxi_vertikal">
 
 
-    <ImageButton
+    <ImageView
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:id="@+id/rent"
@@ -15,48 +15,48 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/kafe"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:background="@mipmap/kafe"
+        android:background="@drawable/button_stroke"
         android:onClick="clickButtonKafe"
-        android:src="@drawable/button_stroke"
+        android:src="@mipmap/kafe"
         android:layout_toRightOf="@id/rent"
         android:layout_above="@id/rent"
         android:layout_marginLeft="-25dp"
         android:layout_marginBottom="15dp"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/repair"
         android:layout_width="72dp"
         android:layout_height="72dp"
-        android:background="@mipmap/repair"
+        android:background="@drawable/button_stroke"
         android:onClick="clickButtonRepair"
-        android:src="@drawable/button_stroke"
+        android:src="@mipmap/repair"
         android:layout_below="@id/kafe"
         android:layout_toRightOf="@id/kafe"
         android:layout_marginLeft="-25dp"/>
 
-    <ImageButton
+    <ImageView
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:id="@+id/sink"
         android:onClick="clickButtonSink"
-        android:src="@drawable/button_stroke"
-        android:background="@mipmap/sink"
+        android:src="@mipmap/sink"
+        android:background="@drawable/button_stroke"
         android:layout_toLeftOf="@id/rent"
         android:layout_above="@id/rent"
         android:layout_marginRight="-25dp"
         android:layout_marginBottom="15dp"/>
 
-    <ImageButton
+    <ImageView
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:id="@+id/service"
         android:onClick="clickButtonService"
-        android:src="@drawable/button_stroke"
-        android:background="@mipmap/service"
+        android:src="@mipmap/service"
+        android:background="@drawable/button_stroke"
         android:layout_toLeftOf="@id/sink"
         android:layout_below="@id/sink"
         android:layout_marginRight="-25dp"/>

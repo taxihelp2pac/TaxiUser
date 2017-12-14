@@ -28,20 +28,41 @@
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
                 android:id="@+id/bigTwoImg"
-                android:layout_below="@+id/bigImg"/>
+                android:layout_below="@+id/bioText"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/genersText"
-                android:layout_below="@+id/bigTwoImg"
+                android:layout_below="@+id/bigImg"
                 android:textSize="17sp"
-                android:layout_alignLeft="@+id/tracksText"
-                android:layout_alignStart="@+id/tracksText"
+                android:layout_alignLeft="@+id/phone"
+                android:layout_alignStart="@+id/phone"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/dim_foreground_material_dark" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/priceText"
+                android:textColor="@color/dim_foreground_material_dark"
+                android:layout_below="@+id/phone"
+                android:layout_toRightOf="@+id/phone"
+                android:textSize="23sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:layout_below="@+id/genersText"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"
+                android:onClick="onClickPhone"/>
+
+            <!--
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -52,6 +73,7 @@
                 android:layout_marginBottom="5dp"
                 android:textSize="17sp"
                 android:textColor="@color/dim_foreground_material_dark" />
+            -->
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,7 +83,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:layout_marginLeft="15dp"
-                android:layout_below="@+id/tracksText"
+                android:layout_below="@+id/phone"
                 android:textSize="17sp"
                 android:textColor="@color/abc_search_url_text_pressed" />
 
@@ -76,17 +98,6 @@
                 android:textColor="@color/material_blue_grey_950"
                 android:text="@string/Miss" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/linkText"
-                android:layout_below="@+id/bioText"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:textColor="@color/colorPrimary"
-                android:onClick="onClick"
-                android:textSize="15sp" />
 
         </RelativeLayout>
     </ScrollView>

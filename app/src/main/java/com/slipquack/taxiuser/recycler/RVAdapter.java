@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,15 +29,17 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
 
         TextView name;
         TextView genres;
-        TextView tracks;
+        //TextView tracks;
         ImageView small;
+        TextView price;
 
         PersonViewHolder(View itemView) {
             super(itemView);
             name = (TextView)itemView.findViewById(R.id.name);
             genres = (TextView)itemView.findViewById(R.id.genres);
-            tracks = (TextView)itemView.findViewById(R.id.tracks);
+            //tracks = (TextView)itemView.findViewById(R.id.tracks);
             small = (ImageView)itemView.findViewById(R.id.imgSmall);
+            price = (TextView)itemView.findViewById(R.id.price);
         }
 
 
@@ -71,7 +74,8 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> 
     public void onBindViewHolder(PersonViewHolder personViewHolder, int i) {
         personViewHolder.name.setText(persons[i].getName());
         personViewHolder.genres.setText(persons[i].style());
-        personViewHolder.tracks.setText(persons[i].music());
+        personViewHolder.price.setText(persons[i].getPrice());
+        //personViewHolder.tracks.setText(persons[i].music());
         Picasso.with(context)
                 .load(persons[i].getCover().getSmall())
                 .into(personViewHolder.small);

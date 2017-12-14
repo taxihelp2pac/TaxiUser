@@ -10,21 +10,25 @@ public class Artist {
     private int id;
     private String name;
     private List<String> genres;
-    private int tracks;
-    private int albums;
+    //private int tracks;
+    //private int albums;
     private String description;
-    private String link;
+    //private String link;
+    private String phone;
+    private String price;
     private cover cover;
 
 
-    public Artist(int id, String name, List<String> genres, int tracks, int albums, String description, String link, cover cover) {
+    public Artist(int id, String price, String name, List<String> genres, String phone, String description, cover cover) {
         this.id = id;
         this.name = name;
         this.genres = genres;
-        this.tracks = tracks;
-        this.albums = albums;
+        //this.tracks = tracks;
+        //this.albums = albums;
         this.description = description;
-        this.link = link;
+        this.phone = phone;
+        this.price = price;
+        //this.link = link;
         this.cover = cover;
 
     }
@@ -44,6 +48,9 @@ public class Artist {
 
     }
 
+    public String getPrice() { return price; }
+
+    public void  setPrice(String price) { this.price = price; }
 
     public String getName() {
         return name;
@@ -70,14 +77,11 @@ public class Artist {
         this.description = description;
     }
 
-    public String getLink() {
-        return link;
-    }
+    public String getPhone() { return phone; }
 
-    public void setLink(String link) {
-        this.link = link;
-    }
+    public void setPhone(String phone) { this.phone = phone; }
 
+    /********
     public int getAlbums() {
         return albums;
     }
@@ -85,6 +89,14 @@ public class Artist {
     public void setAlbums(int albums) {
         this.albums = albums;
     }
+
+     public String getLink() {
+     return link;
+     }
+
+     public void setLink(String link) {
+     this.link = link;
+     }
 
     public int getTracks() {
         return tracks;
@@ -94,6 +106,7 @@ public class Artist {
         this.tracks = tracks;
     }
 
+     *************/
     public int getId() {
         return id;
     }
@@ -114,6 +127,7 @@ public class Artist {
         return style;
     }
 
+    /********
     public String music(){
         String track;
         if ((tracks%100 >9 && tracks%100<21) || (tracks%10>4 && tracks%10<=9) || (tracks%10==0)){
@@ -129,4 +143,5 @@ public class Artist {
 
         return albums + album + tracks + track;
     }
+    *******/
 }

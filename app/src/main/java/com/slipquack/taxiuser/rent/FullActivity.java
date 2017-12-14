@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -44,14 +45,19 @@ public class FullActivity extends AppCompatActivity {
 
 
 
-            TextView genres, track, bio, link;
+            TextView genres, price, bio, link;
+            Button phone;
 
             ImageView big = (ImageView) findViewById(R.id.bigImg);
             ImageView bigTwo = (ImageView) findViewById(R.id.bigTwoImg);
             genres = (TextView) findViewById(R.id.genersText);
-            track = (TextView) findViewById(R.id.tracksText);
+            //track = (TextView) findViewById(R.id.tracksText);
             bio = (TextView) findViewById(R.id.bioText);
-            link = (TextView) findViewById(R.id.linkText);
+            //link = (TextView) findViewById(R.id.linkText);
+            phone = (Button) findViewById(R.id.phone);
+            price = (TextView) findViewById(R.id.priceText);
+
+
 
             //устанавливаем полученные значения
             setTitle(artist.getName());
@@ -63,15 +69,17 @@ public class FullActivity extends AppCompatActivity {
                     .load(artist.getCover().getBig1())
                     .into(bigTwo);
             genres.setText(artist.style());
-            track.setText(artist.music());
+            //track.setText(artist.music());
             bio.setText(artist.getDescription());
-            link.setText(artist.getLink());
+            //link.setText(artist.getLink());
+            phone.setText(artist.getPhone());
+            price.setText(artist.getPrice());
             progressBarFull.setVisibility(ProgressBar.INVISIBLE);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
+/****
     public void onClick(View view){
         TextView link = (TextView) findViewById(R.id.linkText);
         Intent browserIntent = null;
@@ -79,6 +87,15 @@ public class FullActivity extends AppCompatActivity {
             browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(link.getText().toString()));
         }
         startActivity(browserIntent);
+    }
+****/
+    public void onClickPhone(View view) {
+        Button phone = (Button) findViewById(R.id.phone);
+        Intent intent = null;
+        if (phone != null) {
+            intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + phone.getText().toString()));
+        }
+        startActivity(intent);
     }
 
     //кнопка "Домой" - как кнопка "Назад" чтобы не скролить заного вниз листа
@@ -92,4 +109,6 @@ public class FullActivity extends AppCompatActivity {
 
         return(super.onOptionsItemSelected(item));
     }
+
+
 }
