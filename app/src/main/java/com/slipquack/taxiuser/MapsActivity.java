@@ -93,7 +93,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
         assert locationManager != null;
         locationManager.requestLocationUpdates(
-                LocationManager.GPS_PROVIDER, 10 * 3000, 5, locationListener);
+                LocationManager.GPS_PROVIDER, 10, 10, locationListener);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager
                 .PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission
                 .ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -103,7 +103,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 
         locationManager.requestLocationUpdates(
-                LocationManager.NETWORK_PROVIDER, 10 * 3000, 5, locationListener);
+                LocationManager.NETWORK_PROVIDER, 10, 10, locationListener);
         location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
 
     }
@@ -149,10 +149,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             CameraPosition cameraPosition = new CameraPosition.Builder()
                     .target(position)
                     .zoom(18)
-                    .bearing(270)
-                    .tilt(45)
+                    .tilt(65)
                     .build();
-            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 3000, null);
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition), 2000, null);
         }
     }
 

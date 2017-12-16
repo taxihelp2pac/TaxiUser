@@ -1,50 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/rent_vertical">
 
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="102dp">
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="72dp"
+                android:background="@drawable/button_background_black"
+                android:alpha="0.8">
+            </RelativeLayout>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="72dp"
+            android:id="@+id/rent_sale"
+            android:onClick="rentSale"
+            android:textSize="30sp"
+            android:background="@drawable/button_corners"
+            android:text="@string/rent_sale"/>
+        </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
-
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="72dp"
+            android:background="@drawable/button_background_black"
+            android:alpha="0.8">
+        </RelativeLayout>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/rent_sale"
-            android:onClick="rentSale"
-            android:textSize="35sp"
-            android:alpha="0.8"
-            android:text="@string/rent_sale"
-            android:layout_centerHorizontal="true"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="72dp"
             android:id="@+id/rent_select"
-            android:text="@string/rent_select"
             android:onClick="rentSelect"
-            android:textSize="35sp"
-            android:alpha="0.8"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/rent_sale"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="30sp"
+            android:background="@drawable/button_corners"
+            android:text="@string/rent_select"/>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp">
+        <RelativeLayout
+            android:layout_width="180dp"
+            android:layout_height="72dp"
+            android:background="@drawable/button_background_black"
+            android:alpha="0.8">
+        </RelativeLayout>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="72dp"
             android:id="@+id/rent_buy"
-            android:alpha="0.8"
-            android:text="@string/rent_buy"
-            android:textSize="35sp"
-            android:layout_centerHorizontal="true"
             android:onClick="rentBuy"
-            android:layout_below="@id/rent_select"/>
+            android:textSize="30sp"
+            android:background="@drawable/button_corners"
+            android:text="@string/rent_buy"/>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:padding="2dp"
+        android:background="@drawable/button_corners"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:background="@drawable/button_background_black"
+            android:alpha="0.8">
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/service"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_stroke"
+            android:onClick="onClickService"/>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:padding="2dp"
+        android:background="@drawable/button_corners">
+        <RelativeLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:background="@drawable/button_background_black"
+            android:alpha="0.8">
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/repair"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_stroke"
+            android:onClick="onClickRepair"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/button_corners">
+        <RelativeLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:background="@drawable/button_background_black"
+            android:alpha="0.8">
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/sink"
+            android:onClick="onClickSink"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_stroke"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_corners">
+        <RelativeLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:background="@drawable/button_background_black"
+            android:alpha="0.8">
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@mipmap/kafe"
+            android:onClick="onClickKafe"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_stroke"/>
     </RelativeLayout>
 
 </RelativeLayout>

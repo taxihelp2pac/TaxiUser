@@ -60,6 +60,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:textSize="25sp"
+                android:background="@drawable/button_corners"
                 android:onClick="onClickPhone"/>
 
             <!--
