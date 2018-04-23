@@ -1,0 +1,30 @@
+{"type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.117390, 59.732837]},"properties":
+        {"label":"Bezrazvodov","address":"Пушкинское шоссе 3, Красное Село","img":"http://slipqufe.beget.tech/assets/customers/sink/img/bezrazvodov/500.jpg","phone":"89315817048",
+            "text":"Мойка СУПЕР ЛЮКС + Нано обработка кузова (AuthenticPremium), глубокая очистка колесных дисков, кондиционер кожи","site":"//www.bezrazvodov.biz/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.401784, 59.987251]},"properties":
+        {"label":"Bezrazvodov","address":"проспект Мечникова 29к3","img":"http://slipqufe.beget.tech/assets/customers/sink/img/bezrazvodov/500.jpg","phone":"89523718135",
+            "text":"Мойка СУПЕР ЛЮКС + Нано обработка кузова (AuthenticPremium), глубокая очистка колесных дисков, кондиционер кожи","site":"//www.bezrazvodov.biz/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.339049, 60.045875]},"properties":
+        {"label":"Автосолнце","address":"Поэтический б-р, 4","img":"http://slipqufe.beget.tech/assets/customers/sink/img/avtosolnce/500.jpg","phone":"88129311396",
+             "text":"КАПИТАЛЬНЫЙ РЕМОНТ ДВИГАТЕЛЯ АВТОМОБИЛЯ В САНКТ-ПЕТЕРБУРГЕ С ГАРАНТИЕЙ 1 ГОД","site":"//autosolnce.ru/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.235427, 60.026465]},"properties":
+        {"label":"Мойка 2х2","address":"Комендантский проспект, 44А","img":"http://www.moika2x2.ru/image/products/images/wash.jpg","phone":"88123097100",
+            "text":"Технологическая мойка самый простой и самый дешевый способ очистить Ваш автомобиль от грязи и пыли.","site":"//www.moika2x2.ru"}},
+           
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.240720, 60.027356]},"properties":
+        {"label":"Мойка 2х2","address":"Комендантский проспект, 43к3","img":"http://www.moika2x2.ru/image/products/images/pomit_mashinu_nedorogo_ab76.png","phone":"88123097100",
+            "text":"Технологическая мойка самый простой и самый дешевый способ очистить Ваш автомобиль от грязи и пыли.","site":"//www.moika2x2.ru"}},
+            
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.276165, 60.027285]},"properties":
+        {"label":"Мойка 2х2 Люкс","address":"ул. Маршала Новикова, 41к1","img":"http://www.moika2x2.ru/image/products/images/IMG_8916.jpg","phone":"88129294701",
+            "text":"Технологическая мойка самый простой и самый дешевый способ очистить Ваш автомобиль от грязи и пыли.","site":"//www.moika2x2.ru"}},
+            
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.303533, 60.025582]},"properties":
+        {"label":"Мойка 2х2 Люкс","address":"ул. Главная 9","img":"http://www.moika2x2.ru/image/products/images/lux.jpg","phone":"88129294701",
+            "text":"Технологическая мойка самый простой и самый дешевый способ очистить Ваш автомобиль от грязи и пыли.","site":"//www.moika2x2.ru"}}
+  ]}
