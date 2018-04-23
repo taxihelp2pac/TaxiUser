@@ -1,0 +1,18 @@
+{"type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.903292]},"properties":
+        {"label":"Лолита","address":"ул.Лолиты д.1","img":"http://img0.joyreactor.cc/pics/post/full/Anime-%D0%AD%D1%80%D0%BE%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-%D1%8D%D1%80%D0%BE%D1%82%D0%B8%D0%BA%D0%B8-%D0%BD%D1%8F%D1%88%D0%BA%D0%B0-633430.jpeg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание","site":"//slipqufe.beget.tech/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.920292]},"properties":
+        {"label":"Малышки","address":"ул.Розмари д.1","img":"http://www.1366x768.ru/anime/185/anime-wallpaper-1366x768.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание","site":"//slipqufe.beget.tech/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.937292]},"properties":
+        {"label":"Чёрная Пантера","address":"ул.Эдем д.1","img":"https://mota.ru/upload/wallpapers/source/2012/01/20/11/05/29554/mota_ru_2012023.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание","site":"//slipqufe.beget.tech/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.954292]},"properties":
+        {"label":"Бездна","address":"ул.Азалия д.1","img":"http://wallpaper.getwall.ru/5/preview/10186.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание","site":"//slipqufe.beget.tech/"}}
+  ]}

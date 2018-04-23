@@ -1,0 +1,22 @@
+{"type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.903292]},"properties":
+        {"label":"Лолита","address":"ул.Лолиты д.1","img":"http://kinospartak.ru/images/cms/thumbs/1cd5757338a75a71030722ac6d23abc6.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+        
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.920292]},"properties":
+        {"label":"Розмари","address":"ул.Розмари д.1","img":"http://ideybiznes.ru/wp-content/uploads/2014/04/kafe-biznes2.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+        
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.937292]},"properties":
+        {"label":"Эдем","address":"ул.Эдем д.1","img":"http://www.dacha-gastrobistro.ru/gallery/breakfast/2.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+        
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.954292]},"properties":
+        {"label":"Азалия","address":"ул.Азалия д.1","img":"http://olginhotel.ru/assets/img/cafe/lanch02.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}}
+  ]}

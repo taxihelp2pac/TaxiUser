@@ -1,0 +1,22 @@
+{"type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.903292]},"properties":
+        {"label":"ШинкаМашинка","address":"ул.Лолиты д.1","img":"http://www.fainaidea.com/wp-content/uploads/2017/02/17671751381493371726.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.920292]},"properties":
+        {"label":"МашинкаШинка","address":"ул.Розмари д.1","img":"http://i.autohelp31.ru/u/2a/b765e0879111e580eaf8178c962f57/-/untitled.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.937292]},"properties":
+        {"label":"Минутка","address":"ул.Эдем д.1","img":"http://www.okami-mitsubishi.ru/img/1709/file040917115216.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.954292]},"properties":
+        {"label":"МастерШинн","address":"ул.Азалия д.1","img":"http://bosch-korolev.ru/d/231136/d/Shiny.png","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}}
+  ]}

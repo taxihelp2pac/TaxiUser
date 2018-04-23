@@ -1,0 +1,21 @@
+{"type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.339111, 60.045891]},"properties":
+        {"label":"Автосолнце","address":"Поэтический бул., 4","img":"http://slipqufe.beget.tech/assets/customers/sink/img/avtosolnce/500.jpg","phone":"88129311396",
+             "text":"КАПИТАЛЬНЫЙ РЕМОНТ ДВИГАТЕЛЯ АВТОМОБИЛЯ В САНКТ-ПЕТЕРБУРГЕ С ГАРАНТИЕЙ 1 ГОД","site":"//autosolnce.ru/"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.920292]},"properties":
+        {"label":"Автостоп","address":"ул.Розмари д.1","img":"http://expert.ru/data/public/507185/507204/kopiya-17.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.937292]},"properties":
+        {"label":"Сервис по Этапу","address":"ул.Эдем д.1","img":"https://www.kruglie-sutki.ru/wp-content/uploads/2017/04/bosch-sto3-670x300.jpg","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}},
+
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[30.334007, 59.954292]},"properties":
+        {"label":"Сервисанама №1","address":"ул.Азалия д.1","img":"http://transpocom.ru/wp-content/uploads/2013/09/car.png","phone":"89111120966",
+            "text":"Краткое описание деятельности компании, Краткое описание деятельности компании, 
+            Краткое описание деятельности компании, Краткое описание деятельности компании","site":"//slipqufe.beget.tech/index.php?id=1"}}
+  ]}
