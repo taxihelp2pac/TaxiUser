@@ -57,7 +57,7 @@ public class SaleActivity extends RentActivity {
             // получаем данные с внешнего ресурса
             try {
 
-                URL url = new URL("http://slipqufe.beget.tech/assets/customers/rent/sale.json");
+                URL url = new URL("https://slipquack.github.io/buy.txt");
 
                 urlConnection = (HttpURLConnection) url.openConnection();
                 urlConnection.setRequestMethod("GET");

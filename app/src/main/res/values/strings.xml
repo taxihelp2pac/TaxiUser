@@ -4,15 +4,18 @@
     <string name="Biography">Описание</string>
     <string name="Miss">Отсутствует</string>
     <string name="Link">Посмотреть в сети:</string>
-    <string name="url_sink">http://slipqufe.beget.tech/assets/customers/sink/sink.txt</string>
-    <string name="url_kafe">http://slipqufe.beget.tech/assets/customers/kafe/kafe.txt</string>
+    <string name="url_sink">https://slipquack.github.io/sink.txt</string>
+    <string name="url_kafe">https://slipquack.github.io/kafe.txt</string>
     <string name="url_game">http://slipqufe.beget.tech/assets/customers/game/game.txt</string>
-    <string name="url_repair">http://slipqufe.beget.tech/assets/customers/repair/repair.txt</string>
-    <string name="url_service">http://slipqufe.beget.tech/assets/customers/service/service.txt</string>
+    <string name="url_repair">https://slipquack.github.io/repair.txt</string>
+    <string name="url_service">https://slipquack.github.io/service.txt</string>
     <string name="url_rent">http://slipqufe.beget.tech/assets/customers/rent/rent.txt</string>
     <string name="name_site">Перейти на сайт компании</string>
     <string name="rent_select">Аренда</string>
     <string name="rent_sale">Продажа</string>
     <string name="rent_buy">Покупка</string>
     <string name="foto">ФОТО</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
 </resources>
